@@ -1,16 +1,7 @@
-<html>
-    <head>
-        <title> Learning laravel</title>
-        <link rel="stylesheet" type="text/css" href="/app.css">
-
-    </head>
-    <body>
-    <div class="container">
+@extends('component.layout')
+@section('content')
         <article>
             <h3><a href="post/{{ $post->getSlug() }}" >{{$post->getTitle()}} </a></h3>
-            {{ $post->getBody()}}
+            {!! $post->getBody() !!}
         </article>
-    </div>
-
-    </body>
-</html>
+@endsection
