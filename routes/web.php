@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
+use App\Models\Blog;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,12 +17,27 @@ use App\Models\Post;
 
 Route::get('/', function () {
     return view('welcome',[
-        'posts'=>Post::findAll()
+        'posts'=>Post::findAll(),
+        'type'=>'Post'
     ]);
 });
 Route::get('/post/{post}',function ($slug) {
     return view('post',[
         'post'=>Post::findOrFail($slug)
+        ]
+    );
+});
+
+Route::get('/blogs', function () {
+    return view('welcome',[
+        'posts'=>Blog::all(),
+        'type'=>'Blog'
+    ]);
+});
+
+Route::get('/blog/{blog:slug}',function (Blog $blog) {
+    return view('post',[
+            'post'=>$blog
         ]
     );
 });
