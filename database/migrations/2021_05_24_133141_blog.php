@@ -16,6 +16,10 @@ class Blog extends Migration
         //
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
+            //$table->foreignId('category_id');
+            //$table->foreignId('user_id');
+            $table->foreignIdFor(\App\Models\Category::class,'category_id');
+            $table->foreignIdFor(\App\Models\User::class,'user_id');
             $table->string('title');
             $table->text('excerpt')->nullable();
             $table->text('body');

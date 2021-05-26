@@ -18,12 +18,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/Models/Categories.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/Models/Category.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/Models/Post.php">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/Models/User.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/Models/blog.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/factories/BlogFactory.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/factories/CategoryFactory.php">
           <value>
             <set />
           </value>
@@ -34,6 +59,31 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/database/migrations/2021_05_24_133141_blog.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/migrations/2021_05_24_174525_create_categories_table.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/migrations/2021_05_25_130616_create_categories_table.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/seeders/BlogSeeder.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/seeders/CategorySeeder.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php">
           <value>
             <set />
           </value>
