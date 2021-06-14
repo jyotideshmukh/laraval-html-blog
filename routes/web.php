@@ -17,7 +17,7 @@ use App\Models\User;
 |
 */
 
-Route::get('/', function () {
+Route::get('/posts', function () {
     return view('welcome',[
         'posts'=>Post::findAll(),
         'type'=>'Post'
@@ -54,7 +54,7 @@ Route::get('/category/{category:slug}',function (Category $category) {
 
 Route::get('/user/{user:email}',function (User $user) {
     return view('welcome',[
-            'posts'=>$user->blogs,
+            'posts'=>$user->blogs,//->load(['category','user']),
             'type'=>'Blog'
         ]
     );
